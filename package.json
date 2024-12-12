@@ -1,0 +1,41 @@
+{
+  "name": "hero-test-automation",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^14.1.0",
+    "@angular/common": "^14.1.0",
+    "@angular/compiler": "^14.1.0",
+    "@angular/core": "^14.1.0",
+    "@angular/forms": "^14.1.0",
+    "@angular/platform-browser": "^14.1.0",
+    "@angular/platform-browser-dynamic": "^14.1.0",
+    "@angular/router": "^14.1.0",
+    "angular-in-memory-web-api": "^0.14.0",
+    "playwright": "^1.49.0",
+    "rxjs": "^6.6.7",
+    "zone.js": "~0.11.7"
+  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test-playwright": "npx playwright test --headed"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.1.0",
+    "@angular/cli": "^14.1.0",
+    "@angular/compiler-cli": "^14.1.0",
+    "@cucumber/cucumber": "^8.5.1",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^18.6.2",
+    "codelyzer": "^6.0.2",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "tslint": "~6.1.3",
+    "typescript": "~4.7.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

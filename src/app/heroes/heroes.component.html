@@ -1,0 +1,30 @@
+<h2>My Heroes</h2>
+
+<div>
+  <label for="new-hero">Hero name: </label>
+  <input id="new-hero" #heroName />
+  <label for="new-hero">Hero score: </label>
+  <input type="number" id="hero-score" #heroScore>
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button [disabled]="heroes.length >= 12" class="add-button" (click)="add(heroName.value, heroScore.valueAsNumber); heroName.value=''; heroScore.value=''">
+    Add hero
+  </button>
+</div>
+
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}} - {{hero.score}}
+    </a>
+    <button class="delete" title="delete hero"
+      (click)="delete(hero)">x</button>
+  </li>
+</ul>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

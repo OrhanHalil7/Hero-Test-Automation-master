@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
-import { DashboardPage } from '../pages/DashboardPage';
-import { HeroesPage } from '../pages/HeroesPage';
-import { DetailsPage } from '../pages/DetailsPage';
+import { DashboardPage } from '../src/pages/DashboardPage';
+import { HeroesPage } from '../src/pages/HeroesPage';
+import { DetailsPage } from '../src/pages/DetailsPage';
 import assert from 'assert';
 
 test('Add a new hero and verify they appear in the hero list', async ({ page }) => {

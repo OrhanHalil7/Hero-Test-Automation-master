@@ -18,6 +18,7 @@ export class DashboardPage {
         this.page.setDefaultTimeout(10000);
         await this.page.goto('http://localhost:4200/dashboard');
         await this.page.waitForLoadState('networkidle');
+
         //await expect(this.page).toHaveURL(/.dashboard/);
     }
 
